@@ -2,7 +2,7 @@
 
 ## ver_01
 
-![ex_screenshot](./img/ver01_01.png)
-![ex_screenshot](./img/ver01_02.pn)
+![ex_screenshot]()
+![ex_screenshot]()
 
 >> 주소: https://cute-torrone-d945c6.netlify.app

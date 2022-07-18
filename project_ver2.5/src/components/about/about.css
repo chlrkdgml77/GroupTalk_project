@@ -1,0 +1,72 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+  margin-bottom: 10rem;
+}
+
+.about__talk {
+  width: 100%;
+  border-radius: 2rem;
+  background: linear-gradient(0deg, transparent, var(--color-primary));
+  display: grid;
+  place-items: center;
+}
+
+.about__talk-img {
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.about__talk-img:hover {
+  transform: rotate(3deg);
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*???*/
+}
+.about__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 0 0.5rem;
+  text-align: center;
+}
+
+.about__card h5 {
+  font-size: 1rem;
+}
+.about__card small {
+  font-size: 0.6rem;
+  color:  var(--color-light);
+}
+
+.about__content p {
+  margin: 2rem 0;
+  color:  var(--color-light);
+}
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+  }
+  .about__talk {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .about__content {
+    text-align: center;
+  }
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+  .about__container a {
+    margin-bottom: 10rem;
+  }
+}

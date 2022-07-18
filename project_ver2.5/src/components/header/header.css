@@ -1,0 +1,76 @@
+header {
+  height: 100%;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.header__h {
+  font-size: 1.24rem;
+  font-family: 'Edu TAS Beginner', cursive;
+}
+
+.btnH {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.messi {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.messi__container {
+  width: 25%;
+  display: grid;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 3rem auto;
+  transition: 0.4s;
+}
+.messi__container img {
+  width: 10rem;
+  margin: 2rem auto;
+}
+.messi__title {
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.messi__name {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.m_messi_container {
+  display: none;
+}
+
+
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg); /*회전*/
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .messi {
+    display: none;
+  }
+
+  .m_messi_container {
+    display: block;
+    margin: 0 -13rem;
+  }
+}

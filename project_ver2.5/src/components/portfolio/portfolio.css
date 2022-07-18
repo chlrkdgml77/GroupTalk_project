@@ -1,0 +1,81 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.card {
+  color: var(--color-bg-variant);
+  background-image: url("../../img/ine_01.png");
+  background-size: cover;
+  padding: 1rem 0 0;
+  max-width: 10rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+.card {
+  overflow: hidden;
+  min-width: 10px;
+}
+.card:hover {
+  transform: scale(1.05); /*???*/
+  max-width: 20rem;
+}
+
+.card__container {
+  padding: 1.5rem;
+  background: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 1));
+  transform: translateY(65%);
+  transition: transform 500ms ease;
+}
+.card:hover .card__container {
+  transform: translateY(45%);
+}
+
+.card-title {
+  position: relative;
+  width: max-content;
+  font-weight: 600;
+  color: #fff;
+  margin: 1rem 0;
+}
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 1rem;
+  left: calc(1.5rem * -1);
+  bottom: -2rem;
+  width: 100%;
+  background: var();
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+.card:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.card a {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+  .card {
+    max-height: 10rem;
+  }
+  .card:hover {
+    max-height: 30rem;
+  }
+  
+  .card:hover .card__container {
+    transform: translateY(6%);
+  }
+}

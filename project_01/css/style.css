@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: rgb(65, 63, 63);
+
+    font-family: "Spoqa Han Sans Neo", "Sans-serif";
+}
+
+a {
+    all: unset; /*a 태그 기본 설정 리셋*/
+}
+a:link { /*링크가 걸려있을때*/
+    text-decoration: none; /*밑줄 제거*/
+    color: rgb(65, 63, 63);
+}
+a:visited { /*방문했을때*/
+    text-decoration: none; /*밑줄 제거*/
+    color: rgb(65, 63, 63);
+}
+a:active { /*링크를 클릭했을때*/
+    text-decoration: none; /*밑줄 제거*/
+    color: rgb(65, 63, 63);
+}
+a:hover { /*마우스가 올라가져있을때*/
+    color: #2186c4;
+    cursor: pointer;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+
+    padding: 0 2rem;
+
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    
+    /* 스크롤 내렸을때 고정되도록 */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+
+}
+
+.head-container {
+    width: 100%;
+    height: 100%;
+
+    /*수평 정렬*/
+    display: flex; 
+    justify-content: space-between; /*양쪽 끝으로 정렬*/
+    /*수직 정렬*/
+    align-items: center;
+}
+
+.head-container.head-name {
+    font-weight: bold;
+    font-size: 1.2rem; /*rem -> 전체 폰트 사이즈에 맞춰줌*/ 
+}
+
+.head-container.head-ex {
+    font-weight: bold;
+    font-size: 1.2rem; /*rem -> 전체 폰트 사이즈에 맞춰줌*/ 
+}
+
+section {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.main {
+    height: 360px;
+    background-image: url("/img/main_img.jpg");
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    opacity: 0.6; /*투명도*/
+    z-index: 2;
+
+    margin-top: 60px;
+}
+
+.title-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+.message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2rem;
+}
+
+.skill-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    justify-content: space-around; /*수평정렬*/
+    align-items: center; /*수직정렬*/
+
+    padding: 1rem 0;
+}
+.skill {
+    width: 25%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    box-shadow: 10px 12px 5px -1px rgba(138, 138, 252, 0.2);
+
+    /*커서 올렸을 때 반응*/
+    transition: 0.4s;
+}
+.skill:hover {
+    transform: translate(0, -5px);
+}
+.skill-icon {
+    width: 2.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.skill-icon_1 {
+    width: 3.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.skill-title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.skill-name {
+    font-weight: bold;
+    color: rgb(81, 79, 79);
+    margin-bottom: 0.2rem;
+}
+.skill-message {
+    font-size: 0.9rem;
+    color: rgb(81, 79, 79);
+}
+
+.roadmap-container {
+    width: 100%;
+    margin-top: 2rem;
+}
+.roadmap-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /*양쪽끝으로*/
+    align-items: center;
+}
+.roadmap-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(81, 79, 79);
+}
+.slide-prev {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.slide-next {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.class-list {
+    display: flex;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
+    overflow: hidden;
+
+}
+.class-card {
+    width: 240px;
+    box-shadow: 10px 12px 5px -1px rgba(63, 63, 255, 0.2);
+    border-radius: 8px;
+    margin: 0 10px;
+
+    transition: 0.5s;
+}
+.class-card:hover {
+    box-shadow: 10px 12px 5px 3px rgba(63, 63, 255, 0.2);
+    transform: translate(0, -5px);
+}
+.class-img {
+    width: 240px;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+}
+.class-container {
+    width: 100%;
+    padding: 0.5rem 1rem 1rem 1rem;
+}
+.class-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.class-type {
+    font-size: 0.9rem;
+    color: rgb(80, 77, 77);
+}
+.class-format {
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #2186c4;
+    padding: 0.2rem;
+}
+.class-desc {
+    width: 100%;
+    margin-top: 1rem;
+}
+.class-title {
+    font-weight: bold;
+    color: rgb(80, 77, 77);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.5rem;
+}
+.class-detail {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+li a:hover {
+    cursor: pointer;
+}
+
+footer {
+    border-top: 1px solid #c6cdd2;
+    background-color: #dcdcdc;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.footer-message {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgb(60, 60, 60);
+    margin-bottom: 0.2rem;
+}
+.footer-contact {
+    font-size: 0.9rem;
+    color: rgb(60, 60, 60);
+    margin-bottom: 0.4rem;
+}
+.footer-copyright {
+    font-size: 0.9rem;
+    color: rgb(60, 60, 60);
+}
+
+
+@media only screen and (min-width: 1200px) {
+    /* width가 1200px 이상일때... 
+        1200px 이전까지는 100% 보이다가 넘어가면 가운데 정렬됨*/
+    .inner {
+        max-width: 1200px;
+    }
+}
+@media only screen and (max-width: 980px) {
+    /* width가 980 이하일때..
+        skill-container 사라짐*/
+    .skill-container {
+        display: none;
+    }
+}

@@ -14,4 +14,4 @@
 ![ex_screenshot](./img/ver02_2.png)
 ![ex_screenshot](./img/ver02_3.png)
 
->> 주소:
+>> 주소: https://grouptalk-project-b93be5.netlify.app/

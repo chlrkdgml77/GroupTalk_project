@@ -4,7 +4,7 @@
 
 ![ex_screenshot](./img/ver01_1.png)
 
->> 주소: https://cute-torrone-d945c6.netlify.app
+>> 주소: 
 
 
 

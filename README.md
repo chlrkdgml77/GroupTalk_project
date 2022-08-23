@@ -14,4 +14,4 @@
 ![ex_screenshot](./img/ver02_2.png)
 ![ex_screenshot](./img/ver02_3.png)
 
->> 주소: https://joseph0926-project02-ab84bb.netlify.app/
+>> 주소:
